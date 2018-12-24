@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.collinsmallegan.brickcalc.Tab2_Paver">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+                android:text="Area Dimensions"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/YardDimenssions"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+        />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/paverWidth"
+                android:hint="Width FT"
+                android:textAlignment="center"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/paverLength"
+                android:hint="Length FT"
+                android:textAlignment="center"/>
+        <TextView
+                android:text="Brick Dimension"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BrickDimensions"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/paverWidthBrick"
+                android:layout_marginTop="12dp"
+                android:hint="Width IN" tools:layout_editor_absoluteX="84dp" android:textAlignment="center"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/paverDepthBrick"
+                android:hint="Depth IN" android:textAlignment="center"/>
+
+        <Button
+                android:text="Calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:layout_marginTop="2dp"
+                android:onClick="calculatePavers"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="18sp" android:textAlignment="center"
+                android:id="@+id/paverArea"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="18sp" android:textAlignment="center"
+                android:id="@+id/paverBrickCount"/>
+    </LinearLayout>
+</FrameLayout>
